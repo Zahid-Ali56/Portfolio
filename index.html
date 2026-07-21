@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" href="./images/profile.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- background -->
+    <div class="hero-section-wrapper">
+        <div class="glow-overlay"></div>
+
+        <!-- navbar  -->
+        <header>
+
+            <div class="logo-area">
+                <h2>PORTFOLIO</h2>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+
+                <!-- Close Button -->
+                <div class="close-btn" id="closeBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
+
+            <a href="#contact" class="hire-btn">Hire me!</a>
+        </header>
+
+        <!-- hero section -->
+        <section class="hero-container" id="home">
+            <div class="hero-content">
+                <h3>I am Zahid Ali</h3>
+                <h1>Fullstack Developer</h1>
+                <p>I am a passionate Full-stack Developer who creates
+                    modern, responsive, and interactive websites
+                    with clean code and <br> smooth user experience.</p>
+
+                <div class="action-row">
+                    <a href="https://github.com/Zahid-Ali56" target="_blank" class="download-btn">
+                        View My Github <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                            width="24px" fill="#FFFFFF">
+                            <path
+                                d="M800-240v-480h80v480h-80Zm-320 0-57-56 144-144H80v-80h487L424-664l56-56 240 240-240 240Z" />
+                        </svg>
+                    </a>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/tanh.zahid.961/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/zahid-jamali/" target="_blank" class="social-icon"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="https://github.com/Zahid-Ali56" target="_blank" class="social-icon"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="image-card">
+                    <img src="./images/profile.jpg" alt="Hero Img">
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section class="about-me" id="about">
+            <div class="shadow-text">ABOUT ME</div>
+
+            <div class="section-header">
+                <h2>ABOUT ME</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="about-container">
+                <div class="left-side">
+                    <div class="about-img">
+                        <img src="./images/profile.jpg" alt="Zahid Ali">
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <h1>Hi There, I'm <span class="highlight-text">Zahid Ali</span></h1>
+                    <h2>Full-Stack Developer</h2>
+                    <p>I am a passionate Full-Stack Developer who loves turning ideas into modern, responsive, and visually engaging web applications. Leveraging my expertise in HTML, CSS, JS, PHP, Python, and MySQL, I build everything from interactive user interfaces to robust database solutions. I enjoy creating clean layouts and smooth user experiences that not only look good but also perform exceptionally well. With a strong focus on detail and creativity, I am always exploring new technologies to build better digital experiences and meaningful web solutions.</p>
+                    <button class="about-btn">Get In Touch</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section -->
+        <section class="skills-section" id="skills">
+            <div class="shadow-text">SKILLS</div>
+
+            <div class="section-header">
+                <h2>MY SKILLS</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- CARD 1 -->
+                <div class="skill-card">
+
+                    <div class="skill-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#efac2f">
+                            <path
+                                d="m320-241.33-240-240 241.33-241.34L369-675 175-481l192.33 192.33L320-241.33ZM638.67-240 591-287.67l194-194L592.67-674 640-721.33l240 240L638.67-240Z" />
+                        </svg>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="90%"></div>
+                    </div>
+
+                    <div class="skill-percent">90%</div>
+                </div>
+
+
+            <!-- CARD 2 -->
+            <div class="skill-card">
+                <!-- CARD 2 -->
+
+                    <div class="skill-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                            fill="#efac2f">
+                            <path
+                                d="M414-360q-15 0-24.5-9.5T380-394v-46h48v32h104v-53H414q-14 0-24-10t-10-24v-71q0-15 9.5-24.5T414-600h132q15 0 24.5 9.5T580-566v46h-48v-32H428v53h118q14 0 24 10t10 24v71q0 15-9.5 24.5T546-360H414Zm260 0q-15 0-24.5-9.5T640-394v-46h48v32h104v-53H674q-14 0-24-10t-10-24v-71q0-15 9.5-24.5T674-600h132q15 0 24.5 9.5T840-566v46h-48v-32H688v53h118q14 0 24 10t10 24v71q0 15-9.5 24.5T806-360H674Zm-520 0q-15 0-24.5-9.5T120-394v-172q0-15 9.5-24.5T154-600h132q15 0 24.5 9.5T320-566v46h-48v-32H168v144h104v-32h48v46q0 15-9.5 24.5T286-360H154Z" />
+                        </svg>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="80%"></div>
+                    </div>
+
+                    <div class="skill-percent">80%</div>
+
+            </div>
+                <!-- CARD 3 -->
+                <div class="skill-card">
+
+                    <div class="skill-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                            fill="#efac2f">
+                            <path
+                                d="M274-360q-15 0-24.5-9.5T240-394v-66h48v52h84v-192h48v206q0 15-9.5 24.5T386-360H274Zm240 0q-15 0-24.5-9.5T480-394v-46h48v32h104v-53H514q-14 0-24-10t-10-24v-71q0-15 9.5-24.5T514-600h132q15 0 24.5 9.5T680-566v46h-48v-32H528v53h118q14 0 24 10t10 24v71q0 15-9.5 24.5T646-360H514Z" />
+                        </svg>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="60%"></div>
+                    </div>
+
+                    <div class="skill-percent">60%</div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="skill-card">
+
+                    <div class="skill-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#efac2f">
+                            <path
+                                d="M240-289.33 49.33-480 240-670.67 286.67-624l-143 144 143 144L240-289.33Zm174 132.66-64-20 196.67-626.66L610-784 414-156.67Zm306-132.66L673.33-336l143-144-143-144L720-670.67 910.67-480 720-289.33Z" />
+                        </svg>
+                        <span>PYTHON</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="70%"></div>
+                    </div>
+
+                    <div class="skill-percent">70%</div>
+                </div>
+
+
+                <!-- CARD 5 -->
+                <div class="skill-card">
+
+                    <div class="skill-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#efac2f">
+                            <path d="M120-360v-240h140q24 0 42 18t18 42v40q0 24-18 42t-42 18h-80v80h-60Zm260 0v-240h60v80h80v-80h60v240h-60v-100h-80v100h-60Zm280 0v-240h140q24 0 42 18t18 42v40q0 24-18 42t-42 18h-80v80h-60ZM180-500h80v-40h-80v40Zm540 0h8₀v-4₀h-8₀v4₀Z"/>
+                        </svg>
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="80%"></div>
+                    </div>
+
+                    <div class="skill-percent">80%</div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="skill-card">
+
+                    <div class="skill-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#efac2f">
+                            <path
+                                d="M356-80q-56.67 0-107-21t-89-59.67q-38-38-59-88T80-356q0-80.33 41.67-146.67Q163.33-569 232-602q20-41 51.83-72.83Q315.67-706.67 358-728q32.33-70 98.67-111 66.33-41 148-41 56.66 0 106.66 21t88 59.67q38 38.66 59.34 88.33Q880-661.33 880-604.67q0 84.34-39.67 147.67-39.66 63.33-112.33 99-20 42.33-51.5 73.83T602-232q-33 70-99 111T356-80Zm0-66.67q41 0 78.83-16.33 37.84-16.33 63.84-44.33Q437.33-202.67 382-223t-97.33-61.67q-42-41.33-62-97-20-55.66-15.34-117-28.66 26-44.66 63.84-16 37.83-16 78.83 0 44 16 82t45 66.33q29 28.34 66.66 44.67Q312-146.67 356-146.67Zm124-124.66q41 0 78.83-16 37.84-16 65.17-44.67-61.67 4.67-116.67-16.5T411-411.67q-42-42.66-62.83-98-20.84-55.33-15.5-117-33.34 34-47.34 68.17t-14 78.5q0 43.33 15.84 81.33 15.83 38 45.16 67 28.34 28.67 66.34 44.5 38 15.84 81.33 15.84Zm127.33-126q17.34 0 34.5-3.34Q659-404 678-411.33q21.33-59.34 6.83-116.17-14.5-56.83-57.16-99.5-40.67-40.67-101.5-55.83Q465.33-698 409.33-678q-5.33 17-8 34.5-2.66 17.5-2.66 38.83 0 42 15.83 80T459.67-457q29 30.67 67 45.17t80.66 14.5Zm148.67-62q29.33-28 43.33-63.84 14-35.83 14-81.5 0-42.66-15.83-80.33t-45.17-66.67q-29.66-30-67.33-45.83-37.67-15.83-80.33-15.83-44.34 0-81.17 14.33t-66.83 44.33q61.66-4.66 118 16.5Q631-717 674.33-674.33q43.34 42.66 64.84 98 21.5 55.33 16.83 117Zm-150-146Z" />
+                        </svg>
+                        <span>MYSQL</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="70%"></div>
+                    </div>
+
+                    <div class="skill-percent">70%</div>
+                </div>
+
+                <!-- CARD 7 -->
+                <div class="skill-card">
+
+                    <div class="skill-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#efac2f">
+                            <path d="M200-120q-33 0-56.5-23.5T120-200v-500q0-14 4.5-26.5T138-750l56-68q9-11 20.5-16.5T240-840h480q14 0 25.5 5.5T766-818l56 68q9 11 13.5 23.5T840-700v500q0 33-23.5 56.5T760-120H200Zm16-600h528l-34-40H250l-34 40Zm-16 520h560v-440H200v440Zm382-78 142-142-142-142-58 58 84 84-84 84 58 58Zm-202 0 58-58-84-84 84-84-58-58-142 142 142 142Zm-180 78v-440 440Z"/>
+                        </svg>
+                        <span>Laravel</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-fill="40%"></div>
+                    </div>
+
+                    <div class="skill-percent">40%</div>
+                </div>
+
+               
+            </div>
+        </section>
+
+
+        <!-- projects section -->
+        <section class="projects-section" id="projects">
+            <div class="shadow-text">PROJECTS</div>
+
+            <div class="section-header">
+                <h2>MY PROJECTS</h2>
+                <div class="line"></div>
+            </div>
+
+            <!-- PROJECTS GRID -->
+            <div class="projects-grid">
+
+                <!-- PROJECTS CARD 1-->
+                <div class="project-card">
+
+                    <!-- PROJECT IMAGE -->
+                    <div class="project-img">
+                        <img src="./images/Project1.jpg" alt="project 1">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Fanta Scroll Animation Website</h3>
+                        <p>A GSAP-powered Fanta landing page with smooth scroll animations and interactive effects.</p>
+
+                        <!-- PROJECTS BUTTONS -->
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>GSAP</span>
+                        </div>
+
+                        <button class="project-btn"><a href="https://fanta-scroll-animation-chi.vercel.app/"
+                                target="_blank">View Project <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                                    viewBox="0 -960 960 960" width="20px" fill="#FFFFFF">
+                                    <path
+                                        d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                                </svg></button></a>
+                    </div>
+                </div>
+                <!-- PROJECTS CARD 2-->
+                <div class="project-card">
+
+                    <!-- PROJECT IMAGE -->
+                    <div class="project-img">
+                        <img src="./images/traffic.jpg" alt="project 1">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Ai-Traffic-Optimization</h3>
+                        <p>Built a Python and Streamlit web app for an AI Traffic Controller based on PEAS measures. Simulated and optimized real-time traffic flow dynamics and agent efficiency.</p>
+
+                        <!-- PROJECTS BUTTONS -->
+                        <div class="project-tags">
+                            <span>PYTHON</span>
+                            <span>Streamlit UI</span>
+                            
+                        </div>
+
+                        <button class="project-btn"><a href="https://traffic-optimization.streamlit.app/"
+                                target="_blank">View Project <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                                    viewBox="0 -960 960 960" width="20px" fill="#FFFFFF">
+                                    <path
+                                        d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                                </svg></button></a>
+                    </div>
+                </div>
+
+
+             
+                <!-- PROJECTS CARD 3 -->
+                <div class="project-card">
+
+                    <!-- PROJECT IMAGE -->
+                    <div class="project-img">
+                        <img src="./images/calculator.jpg" alt="project 1">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Calculator</h3>
+                        <p>Responsive calculator web app with real-time calculations, smooth interactions, and a
+                            light/dark mode toggle.</p>
+
+                        <!-- PROJECTS BUTTONS -->
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+
+                        <button class="project-btn"><a href="https://code-alpha-calculator-x2t5.vercel.app/"
+                                target="_blank">View Project <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                                    viewBox="0 -960 960 960" width="20px" fill="#FFFFFF">
+                                    <path
+                                        d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                                </svg></button></a>
+                    </div>
+                </div>
+                   <!-- PROJECTS CARD 04 -->
+                <div class="project-card">
+
+                    <!-- PROJECT IMAGE -->
+                    <div class="project-img">
+                        <img src="./images/Project2.jpg" alt="project 1">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Image Gallery</h3>
+                        <p>A modern and responsive image gallery with category filtering and smooth slider functionality
+                            for an interactive viewing experience.</p>
+
+                        <!-- PROJECTS BUTTONS -->
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+
+                        <button class="project-btn"><a href="https://code-alpha-image-gallery-orcin.vercel.app/"
+                                target="_blank">View
+                                Project <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="20px" fill="#FFFFFF">
+                                    <path
+                                        d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                                </svg></button></a>
+                    </div>
+                </div>
+
+                <!-- PROJECTS CARD 4-->
+                <div class="project-card">
+
+                    <!-- PROJECT IMAGE -->
+                    <div class="project-img">
+                        <img src="./images/project4.png" alt="project 1">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Creamy Delight Website</h3>
+                        <p>A modern and responsive dessert website showcasing creamy and delicious sweet delights with
+                            an
+                            elegant UI.</p>
+
+                        <!-- PROJECTS BUTTONS -->
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <button class="project-btn"><a href="https://creamy-delight.vercel.app/" target="_blank">View
+                                Project <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="20px" fill="#FFFFFF">
+                                    <path
+                                        d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                                </svg></button></a>
+                    </div>
+                </div>
+
+                
+                <!-- PROJECTS CARD 6-->
+               
+
+                <!-- PROJECTS CARD 7 -->
+                <div class="project-card">
+
+                    <!-- PROJECT IMAGE -->
+                    <div class="project-img">
+                        <img src="./images/project10.png" alt="project 1">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Login-Signup Form</h3>
+                        <p>A responsive authentication system using Firebase, featuring secure login, signup, and
+                            real-time
+                            user data management.</p>
+
+                        <!-- PROJECTS BUTTONS -->
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Firebase</span>
+                        </div>
+
+                        <button class="project-btn"><a href="https://login-signup-firebase-nu.vercel.app/"
+                                target="_blank">View Project <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                                    viewBox="0 -960 960 960" width="20px" fill="#FFFFFF">
+                                    <path
+                                        d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                                </svg></button></a>
+                    </div>
+                </div>
+
+
+            
+            </div>
+        </section>
+
+        <!-- experience & education section-->
+        <section class="resume-section" id="resume">
+
+            <div class="shadow-text">RESUME</div>
+
+            <div class="section-header">
+                <h2>RESUME</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="resume-container">
+
+                <!-- LEFT: EDUCATION -->
+                <div class="resume-box left">
+                    <div class="box-title">
+                        <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="100px" fill="">
+                                <path
+                                    d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                            </svg></i>
+                        <h3>Education</h3>
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <span class="dot"></span>
+                            <div class="content">
+                                <h4>Web Development Course</h4>
+                                <p>NAVTTC (2024/03 - 2024/05)</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="dot"></span>
+                            <div class="content">
+                                <h4>Python Developer</h4>
+                                <p>PITP Mehran University & Engeerning Technology  (2025/09 - 2025/11)</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="dot"></span>
+                            <div class="content">
+                                <h4>Undergraduation <br><h5>(BSCS Computer Science)</h5></h4>
+                                <p>University of Sindh Jamshoro <br>(2023 - 2027)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT: EXPERIENCE -->
+                <div class="resume-box right">
+                    <div class="box-title">
+                        <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                width="100px" fill="#efac2f">
+                                <path
+                                    d="M42-120v-112q0-33 17-62t47-44q51-26 115-44t141-18q77 0 141 18t115 44q30 15 47 44t17 62v112H42Zm80-80h480v-32q0-11-5.5-20T582-266q-36-18-92.5-36T362-320q-71 0-127.5 18T142-266q-9 5-14.5 14t-5.5 20v32Zm127-287q-47-47-47-113h-10q-9 0-14.5-5.5T172-620q0-9 5.5-14.5T192-640h10q0-45 22-81t58-57v38q0 9 5.5 14.5T302-720q9 0 14.5-5.5T322-740v-54q9-3 19-4.5t21-1.5q11 0 21 1.5t19 4.5v54q0 9 5.5 14.5T422-720q9 0 14.5-5.5T442-740v-38q36 21 58 57t22 81h10q9 0 14.5 5.5T552-620q0 9-5.5 14.5T532-600h-10q0 66-47 113t-113 47q-66 0-113-47Zm169.5-56.5Q442-567 442-600H282q0 33 23.5 56.5T362-520q33 0 56.5-23.5ZM662-360l-6-30q-6-2-11.5-4.5T634-402l-28 10-20-36 22-20v-24l-22-20 20-36 28 10q4-4 10-7t12-5l6-30h40l6 30q6 2 12 5t10 7l28-10 20 36-22 20v24l22 20-20 36-28-10q-5 5-10.5 7.5T708-390l-6 30h-40Zm41-79q9-9 9-21t-9-21q-9-9-21-9t-21 9q-9 9-9 21t9 21q9 9 21 9t21-9Zm51-121-8-42q-9-3-16.5-7.5T716-620l-42 14-28-48 34-30q-2-5-2-8v-16q0-3 2-8l-34-30 28-48 42 14q6-6 13.5-10.5T746-798l8-42h56l8 42q9 3 16.5 7.5T848-780l42-14 28 48-34 30q2 5 2 8v16q0 3-2 8l34 30-28 48-42-14q-6 6-13.5 10.5T818-602l-8 42h-56Zm63.5-104.5Q832-679 832-700t-14.5-35.5Q803-750 782-750t-35.5 14.5Q732-721 732-700t14.5 35.5Q761-650 782-650t35.5-14.5ZM362-200Z" />
+                            </svg></i>
+                        <h3>Experience</h3>
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <span class="dot"></span>
+                            <div class="content">
+                                <h4>Full-Stack Developer Intern</h4>
+                                <p>Decodelabs (July 2026 - Present)</p>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- certificates section-->
+        <section class="certificates-section" id="certificates">
+
+            <div class="shadow-text">CERTIFICATES</div>
+
+            <div class="section-header">
+                <h2>MY CERTIFICATES</h2>
+                <div class="line"></div>
+            </div>
+
+            <!-- certificates cards -->
+            <div class="certificates-cards">
+
+
+                <!-- CERTIFICATES CARD 1 -->
+                <div class="certificate-card">
+                    <!-- CERTIFICATE IMAGE -->
+                    <div class="img">
+                        <img src="./images/navticc.jpg" alt="">
+                    </div>
+
+                    <!-- TEXT -->
+                    <h2>Web Development Certificate</h2>
+                    <p>Awarded for successfully completing assigned lab tasks with outstanding performance and dedication.
+                    </p>
+                </div>
+
+
+                <!-- CERTIFICATES CARD 2 -->
+                <div class="certificate-card">
+                    <!-- CERTIFICATE IMAGE -->
+                    <div class="img">
+                        <img src="./images/pitp.jpg" alt="">
+                    </div>
+
+                    <!-- TEXT -->
+                    <h2>Python Development</h2>
+                    <p>Participating in a python development PITP Program to build creative and innovative & realworld web solutions.</p>
+                </div>
+
+
+                <!-- CERTIFICATES CARD 3 -->
+                <div class="certificate-card">
+                    <!-- CERTIFICATE IMAGE -->
+                    <div class="img">
+                        <img src="./images/sindh_certificate.jpg" alt="">
+                    </div>
+
+                    <!-- TEXT -->
+                    <h2>IMCS TechVerve – 2024</h2>
+                    <p>
+                       Awarded a Certificate of Participation for attending IMCS TechVerve 2024 at the University of Sindh. Engaged in insightful sessions focused on navigating modern technologies and digital realm strategies
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- services section -->
+        <section class="services-section" id="services">
+
+            <div class="shadow-text">SERVICES</div>
+
+            <div class="section-header">
+                <h2>SERVICES</h2>
+                <div class="line"></div>
+            </div>
+
+            <!-- SERVICES CARDS -->
+            <div class="services-grid">
+
+                <!-- CARD 1 -->
+                <div class="services-card">
+                    <!-- ICON -->
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#efac2f">
+                            <path d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm242.5-97.5Q420-475 420-500t-17.5-42.5Q385-560 360-560t-42.5 17.5Q300-525 300-500t17.5 42.5Q335-440 360-440t42.5-17.5Zm240 0Q660-475 660-500t-17.5-42.5Q625-560 600-560t-42.5 17.5Q540-525 540-500t17.5 42.5Q575-440 600-440t42.5-17.5ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"/>
+                        </svg>
+                    </div>
+                   <h3>Web Development & AI Integration</h3>
+                   <p>Developing fast, dynamic websites with robust SQL database management to handle your business data seamlessly, complemented by smart AI features and automation.</p>
+                </div>
+
+                <!-- CARD 2 -->
+                 <div class="services-card">
+                    <!-- ICON -->
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#efac2f">
+                           <path
+                                d="M805.67-59 279.33-585.33 175-481l192.33 192.33L320-241.33l-240-240L231.67-633 59-805.67l47.67-47.66 746.66 746.66L805.67-59ZM727-328.33 679.33-376 785-481.67 592.67-674 640-721.33l240 240-153 153Z" />
+                            
+                        </svg>
+                    </div>
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Building fully responsive, high-performance websites using HTML, CSS, JavaScript, PHP, and Python for a seamless experience on all devices.</p>
+                </div>
+                
+                <!-- CARD 3 -->
+                 <div class="services-card">
+                    <!-- ICON -->
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#efac2f">
+                            <path
+                                d="M120-120v-510h210v-210h510v720H120Zm510-66.67h143.33v-586.66H396.67V-630H630v443.33Zm-233.33 0h166.66v-376.66H396.67v376.66Zm-210 0H330v-376.66H186.67v376.66ZM630-630v66.67V-630Zm-300 66.67Zm233.33 0ZM630-630Z" />
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and visually appealing user experiences.</p>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section class="contact-section" id="contact">
+
+            <div class="shadow-text">CONTACT</div>
+
+            <div class="section-header">
+                <h2>CONTACT</h2>
+                <div class="line"></div>
+            </div>
+
+
+            <div class="contact-container">
+
+                <!-- Left Side -->
+                <div class="contact-form-box">
+
+                    <h2>Let's Work Together!</h2>
+                    <p>
+                        Have a project in mind? Feel free to contact me.
+                    </p>
+
+                    <form action="https://formspree.io/f/mbdnyblw" method="POST" class="contact-form">
+
+                        <div class="input-row">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email"  name="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="input-row">
+                            <input type="text" name="phone" placeholder="Phone Number">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+
+                        <textarea rows="6" name="message" placeholder="Write your message..." required></textarea>
+
+                        <button type="submit">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="contact-info">
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <h4>Call Me</h4>
+                            <p>+92 320 3452714</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h4>Email</h4>
+                            <p>zahidjamali455@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h4>Location</h4>
+                            <p>Hyderabad, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer section  -->
+
+        <footer class="footer">
+
+            <div class="footer-content">
+
+                <h2 class="footer-logo">PORTFOLIO</h2>
+
+                <p>
+                    Full-Stack Developer a passionate about creating
+                    modern website, and responsive, user-friendly web experiences.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/tanh.zahid.961/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/zahid-jamali/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Zahid-Ali56" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Zahid Ali | All Rights Reserved</p>
+            </div>
+
+            <div class="scrolltop">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="40px"
+                        fill="#efac2f">
+                        <path
+                           d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/>
+                    </svg>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
