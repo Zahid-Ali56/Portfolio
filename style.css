@@ -130,7 +130,7 @@ nav ul li a:hover {
 .close-btn {
     position: absolute;
     top: 25px;
-    right: 50px;
+    right: 40px;
     font-size: 32px;
     color: #fff;
     cursor: pointer;
@@ -1393,7 +1393,7 @@ nav ul li a:hover {
 /* Mobile for screens */
 @media (max-width: 768px) {
     .scrolltop {
-        right: 60px; 
+        right: 40px; 
         bottom: 40px;
     }
 }
