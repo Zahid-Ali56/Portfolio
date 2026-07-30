@@ -15,8 +15,7 @@ if (closeBtn && navLinks) {
   });
 }
 
-
-// SKILLS 
+// SKILLS ANIMATION
 document.addEventListener("DOMContentLoaded", () => {
   const skillFills = document.querySelectorAll(".skill-fill");
 
@@ -33,20 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
   skillFills.forEach(fill => observer.observe(fill));
 });
 
-
 // SCROLL TO TOP
-let scroll = document.querySelector(".scrolltop");
+const scrollBtn = document.querySelector(".scrolltop");
 
-if (scroll) {
-  scroll.addEventListener("click", () => {
+if (scrollBtn) {
+  scrollBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
     });
   });
 }
-// CERTIFICATES SLIDER WITH 3-CARD BATCH AUTO-ROTATE
+
+// CERTIFICATES SLIDER & PROJECTS SEE MORE TOGGLE
 document.addEventListener("DOMContentLoaded", () => {
+
+  // 1. CERTIFICATES SLIDER LOGIC
   const container = document.getElementById('certificatesContainer');
   const leftBtn = document.getElementById('scrollLeft');
   const rightBtn = document.getElementById('scrollRight');
@@ -54,22 +55,18 @@ document.addEventListener("DOMContentLoaded", () => {
   if (container) {
     let autoScrollInterval;
 
-    // Calculate the total width of 3 cards combined
     const getBatchWidth = () => {
       const card = container.querySelector('.certificate-card');
       if (card) {
-        // Individual card width plus gap (20px) multiplied by 3 cards
         return (card.offsetWidth + 20) * 3;
       }
-      return container.clientWidth; // Fallback to full viewport width
+      return container.clientWidth;
     };
 
-    // Slide Next (Batch of 3 Cards)
     const slideNext = () => {
       const scrollAmount = getBatchWidth();
       const maxScrollLeft = container.scrollWidth - container.clientWidth;
 
-      // Reset scroll position to the beginning if reaching the end
       if (container.scrollLeft >= maxScrollLeft - 20) {
         container.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
@@ -77,46 +74,82 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
 
-    // Slide Previous (Batch of 3 Cards)
     const slidePrev = () => {
       const scrollAmount = getBatchWidth();
       container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     };
 
-    // Start Auto-rotation Timer
     const startAutoScroll = () => {
-      autoScrollInterval = setInterval(slideNext, 5000); // 5 Seconds Interval
+      autoScrollInterval = setInterval(slideNext, 5000);
     };
 
-    // Stop Auto-rotation Timer
     const stopAutoScroll = () => {
       clearInterval(autoScrollInterval);
     };
 
-    // Right Button Click Event Handler
     if (rightBtn) {
       rightBtn.addEventListener('click', () => {
         slideNext();
         stopAutoScroll();
-        startAutoScroll(); // Reset rotation timer
+        startAutoScroll();
       });
     }
 
-    // Left Button Click Event Handler
     if (leftBtn) {
       leftBtn.addEventListener('click', () => {
         slidePrev();
         stopAutoScroll();
-        startAutoScroll(); // Reset rotation timer
+        startAutoScroll();
       });
     }
 
-    // Pause Auto-rotation on Mouse Hover & Resume on Mouse Leave
     const wrapper = container.closest('.certificates-wrapper') || container;
     wrapper.addEventListener('mouseenter', stopAutoScroll);
     wrapper.addEventListener('mouseleave', startAutoScroll);
 
-    // Initialize Auto-rotation
     startAutoScroll();
+  }
+
+  // 2. PROJECTS "SEE MORE / SEE LESS" LOGIC
+  const projectCards = document.querySelectorAll(".project-card");
+  const seeMoreBtn = document.getElementById("seeMoreBtn");
+  const maxInitialVisible = 6; // Initial visible projects limit
+
+  if (projectCards.length > maxInitialVisible) {
+    // Hide extra projects beyond initial 6 (index >= 6)
+    projectCards.forEach((card, index) => {
+      if (index >= maxInitialVisible) {
+        card.classList.add("is-hidden");
+      }
+    });
+
+    if (seeMoreBtn) {
+      seeMoreBtn.style.display = "inline-block"; // Show button if > 6 projects
+      seeMoreBtn.addEventListener("click", () => {
+        const isExpanded = seeMoreBtn.getAttribute("data-expanded") === "true";
+
+        if (!isExpanded) {
+          // Show all projects
+          projectCards.forEach(card => card.classList.remove("is-hidden"));
+          seeMoreBtn.textContent = "See Less Projects";
+          seeMoreBtn.setAttribute("data-expanded", "true");
+        } else {
+          // Hide back to initial 6 projects
+          projectCards.forEach((card, index) => {
+            if (index >= maxInitialVisible) {
+              card.classList.add("is-hidden");
+            }
+          });
+          seeMoreBtn.textContent = "See More Projects";
+          seeMoreBtn.setAttribute("data-expanded", "false");
+
+          // Smooth scroll back to top of projects section
+          document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    }
+  } else if (seeMoreBtn) {
+    // Hide button if total projects are 6 or fewer
+    seeMoreBtn.style.display = "none";
   }
 });

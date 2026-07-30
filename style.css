@@ -743,6 +743,39 @@ nav ul li a:hover {
     position: relative;
 }
 
+/* 6 se zyada projects ko hide karne ke liye */
+.project-card.is-hidden {
+    display: none !important;
+}
+
+/* Center Aligned See More Button Container */
+.see-more-btn-container {
+    text-align: center;
+    margin-top: 35px;
+    width: 100%;
+}
+
+/* See More Button Styling (Matching your Theme) */
+.see-more-btn {
+    background: transparent;
+    color: #e2b023;
+    border: 2px solid #e2b023;
+    padding: 10px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(226, 176, 35, 0.2);
+}
+
+.see-more-btn:hover {
+    background: #e2b023;
+    color: #000;
+    box-shadow: 0 0 15px rgba(226, 176, 35, 0.6);
+    transform: translateY(-2px);
+}
+
 .project-card:hover {
     transform: translateY(-10px) scale(1.01);
     box-shadow: 0 0 20px #efac2f, 0 0 30px #000000;
